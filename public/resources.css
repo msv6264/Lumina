@@ -257,3 +257,17 @@ body {
 .vertical-logo {
     font-size: 2.5vw;
 }
+#goto-top-btn {
+    background-color: white;
+    padding: 15px 19px;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 118px;
+    right: 30px;
+    display: none;
+  }
+  
+  #goto-top-btn:hover {
+    background-color: #bdbaba;
+  }

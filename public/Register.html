@@ -10,18 +10,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #e9c46cea;
+            background: rgb(247, 247, 178);
             color: #333;
         }
 
         .container {
             max-width: 1000px;
             margin-top: 10px;
-            margin-left:210px;
+            margin-left: 210px;
             background: #fff;
             padding: 25px;
             border-radius: 10px;
-            border: 17px solid #e9c46cea;
+            border: 17px solid rgb(247, 247, 178);
             box-shadow: 0 4px 8px rgba(238, 165, 165, 0.2);
         }
 
@@ -152,14 +152,10 @@
         }
 
         .container2 {
-            width: auto;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
-        }
-
-        .vertical-logo {
-            font-size: 2.5vw;
         }
 
         .grid-container {
@@ -170,11 +166,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
-            
         }
 
         .grid-item {
-            background: linear-gradient(135deg, pink, #acb6e5);
+            background-color: rgba(237, 230, 230, 0.674);
             padding: 20px;
             border-radius: 10px;
         }
@@ -214,6 +209,29 @@
 
         .social-media a:hover {
             color: #000;
+        }
+
+        .quote {
+            margin-top: 1rem;
+        }
+
+        .vertical-logo {
+            font-size: 2.5vw;
+        }
+
+        #goto-top-btn {
+            background-color: white;
+            padding: 15px 19px;
+            border: none;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 118px;
+            right: 30px;
+            display: none;
+        }
+
+        #goto-top-btn:hover {
+            background-color: #bdbaba;
         }
     </style>
 </head>
@@ -260,7 +278,6 @@
         <div class="message" id="successMessage">You have successfully registered for the workshop! We will contact you
             soon.</div>
     </div>
-
     <div class="container2">
         <div class="grid-container">
             <div class="grid-item">
@@ -270,7 +287,7 @@
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Shipping</a>
             </div>
-            <div class="vertical-logo" style="color:red;">LUMINA</div>
+            <div class="vertical-logo" style="color:black;">LUMINA</div>
             <div class="grid-item">
                 <h2>Get in Touch</h2>
                 <a href="#">Instagram</a>
@@ -279,17 +296,17 @@
                 <a href="#">Contact Us</a>
             </div>
         </div>
-
         <div class="social-media">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
             <a href="#">LinkedIn</a>
         </div>
-
         <div class="footer">
-            Email: contact@lumina.com <br />
+            Email: contact@lumina.com <br>
             &copy; <span id="copyright-year"></span> All Rights Reserved <span style="color:red;">Lumina</span>
         </div>
     </div>
+
 
     <script>
         const form = document.getElementById('workshopForm');

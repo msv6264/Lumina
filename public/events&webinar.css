@@ -119,13 +119,15 @@ h1 {
 
 
 .event {
+    width: 60%;
+    margin: 0 auto;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-content: left;
-    text-align: left;
-    background: linear-gradient(135deg, pink, #acb6e5);
+    text-align: center;
+    background: linear-gradient(135deg, rgb(230, 226, 158), rgb(165, 218, 218), #91daa7);
     box-shadow: 0 8px 15px pink;
     text-align: center;
     transition: transform 0.6s, box-shadow 0.3s ease;
@@ -133,7 +135,7 @@ h1 {
     transform-style: preserve-3d;
     perspective: 1000px;
     position: relative;
-    min-height: 250px;
+    min-height: 230px;
     padding-bottom: 70px;
 }
 
@@ -225,7 +227,7 @@ h1 {
 }
 
 .grid-item {
-    background:linear-gradient(135deg, pink, #acb6e5);
+    background:linear-gradient(135deg, rgb(138, 196, 215), #91da91);
     padding: 20px;
     border-radius: 10px;
 }

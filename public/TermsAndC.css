@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(247, 247, 178) !important;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #f7e2b1ea;
+}
+
+#nav img {
+    width: 100px;
+}
+
+#nav #right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+    transition: font-size 0.3s;
+}
+
+#nav a:hover {
+    font-size: 2vw;
+}
+
+.terms-section {
+  padding: 40px 20px;
+  color: #333;
+}
+
+.terms-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.terms-section .content {
+  background-color: #f0ebd5;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.terms-section h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.terms-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.terms-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-section ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .terms-section .content {
+    padding: 20px;
+  }
+
+  .terms-section h1 {
+    font-size: 28px;
+  }
+
+  .terms-section h2 {
+    font-size: 24px;
+  }
+
+  .terms-section p,
+  .terms-section ul li {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px) {
+    #nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    #nav img {
+        width: 100px;
+    }
+
+    #nav a {
+        font-size: 1.5vw;
+    }
+
+    #nav i {
+        font-size: 1.5vw;
+    }
+
+}
+
+#nav i {
+    font-weight: 100px;
+    font-size: 1rem;
+}
+
+#right a.login-btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#right a.login-btn:hover {
+    color: black;
+    background-color: #ffffff;
+}
